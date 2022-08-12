@@ -41,15 +41,49 @@
 //};
 
 //Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
-Console.Write("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-int res = 1;
-if (res == 1)
-{
-res += 1;
-}
-while (res <= num)
-{
-Console.WriteLine(res);
-res += 2;
-}
+//Console.Write("Введите число: ");
+//int num = Convert.ToInt32(Console.ReadLine());
+//int res = 1;
+//if (res == 1)
+//{
+//res += 1;
+//}
+//while (res <= num)
+//{
+//Console.WriteLine(res);
+//res += 2;
+//}
+//Напишите программу, которая выводит случайное трёхзначное число и удаляет вторую цифру этого числа.
+
+//# Домашнее задание 2
+//Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+// Console.Write("Введите трехзначное число: ");
+// int threeDigitNumber = Convert.ToInt32(Console.ReadLine());
+// string stringNumber = Convert.ToString(threeDigitNumber);
+// Console.WriteLine("Вторая цифра этого числа: "+stringNumber[1]);
+
+//Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+// Console.Write("Введите число: ");
+// int Number = Convert.ToInt32(Console.ReadLine());
+// string stringNumber = Convert.ToString(Number);
+// if (stringNumber.Length > 2){
+// Console.WriteLine("Третья цифра числа: "+stringNumber[2]);
+// }
+// else
+// {
+// Console.WriteLine("Третьей цифры нет");
+// }
+
+//Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+// Console.Write("Введите цифру,обозначающую день недели: ");
+// int dayNumber = Convert.ToInt32(Console.ReadLine());
+// void DayOfTheWeek (int dayNumber) {
+//   if (dayNumber == 6 || dayNumber == 7) {
+//   Console.WriteLine("выходной");
+//   }
+//   else if (dayNumber < 1 || dayNumber > 7) {
+//     Console.WriteLine("такого дня недели нет");
+//   }
+//   else Console.WriteLine("не выходной");
+// }
+// DayOfTheWeek(dayNumber);
