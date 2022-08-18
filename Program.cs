@@ -87,3 +87,60 @@
 //   else Console.WriteLine("не выходной");
 // }
 // DayOfTheWeek(dayNumber);
+
+// Задача 23
+// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+// Console.Write("Введите число: ");
+// int N = Convert.ToInt32(Console.ReadLine());
+// {
+//     int count = 1;
+//     while (count <= N)
+// {
+//     Console.Write($"{Math.Pow(count, 3)} ");
+//     count++;
+// }
+// }
+
+// Задача 19
+// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+
+// Console.Write("Введите пятизначное число: ");
+// int Number = Convert.ToInt32(Console.ReadLine());
+// if (Number < 10000 || Number > 99999)
+// {
+//     Console.WriteLine("Число не пятизначное");
+// }
+//     else
+//     {
+//     if ((Number % 10) == ((Number / 10000)%10) && ((Number / 10) % 10) == ((Number / 1000) % 10))
+//     {
+//     Console.WriteLine($"Число {Number} является палиндромом ");
+//     }
+//     else 
+//     {
+//          Console.WriteLine($"Число {Number} не является палиндромом ");
+//     }
+//     }
+
+// Задача 21
+// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+// void length(double a, double b, double c, double d, double e, double f)
+// { 
+//     Console.WriteLine($"Расстояние между точками : {Math.Round(Math.Sqrt(Math.Pow(a - d, 2) + Math.Pow(b - e, 2) + Math.Pow(c - f, 2)), 2)}");
+// }
+// Console.WriteLine("Введите координаты точек в 3D пространстве");
+// Console.Write("Координаты x первой точки : ");
+// double xa = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Координаты y первой точки : ");
+// double ya = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Координаты z первой точки : ");
+// double za = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Координаты x второй точки : ");
+// double xb = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Координаты y второй точки : ");
+// double yb = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Координаты z второй точки : ");
+// double zb = Convert.ToDouble(Console.ReadLine());
+// length(xa,ya,za,xb,yb,zb);
