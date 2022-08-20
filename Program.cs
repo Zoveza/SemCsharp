@@ -59,7 +59,7 @@
 //Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
 // Console.Write("Введите трехзначное число: ");
 // int threeDigitNumber = Convert.ToInt32(Console.ReadLine());
-// string stringNumber = Convert.ToString(threeDigitNumber);
+// 
 // Console.WriteLine("Вторая цифра этого числа: "+stringNumber[1]);
 
 //Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
@@ -144,3 +144,28 @@
 // Console.Write("Координаты z второй точки : ");
 // double zb = Convert.ToDouble(Console.ReadLine());
 // length(xa,ya,za,xb,yb,zb);
+
+// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+
+// Console.Write("Введите первое число: ");
+// double a = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// double b = Convert.ToDouble(Console.ReadLine());
+// int i = Convert.ToInt32(Math.Pow(a, b));
+// Console.WriteLine($"Число a в степени b = " + i );
+
+
+// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+
+// Console.Write("Введите число: ");
+// int Number = Convert.ToInt32(Console.ReadLine());
+// int sum = 0;
+
+// while (Number > 0)
+// {
+// sum += Number % 10;
+// Number = Number / 10;
+// }
+// Console.WriteLine("Cумма всех цифр в числе = " + sum);
+
+
