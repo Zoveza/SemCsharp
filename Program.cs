@@ -471,3 +471,196 @@
 //         Console.WriteLine("");
 //     }
 // }
+
+// Задача 65: Задайте значения M и N. Напишите программу, которая выведет все натуральные числа в промежутке от M до N.
+// M = 1; N = 5 -> "1, 2, 3, 4, 5"
+// M = 4; N = 8 -> "4, 5, 6, 7, 8"
+
+// Console.Write("Введите M: ");
+// int m = int.Parse(Console.ReadLine());
+// Console.Write("Введите N: ");
+// int n = int.Parse(Console.ReadLine());
+// PrintNumbers(m,n);
+
+// void PrintNumbers(int start, int end)
+// {
+//     Console.Write($"{start} ");
+//     if (start == end) return;
+//     PrintNumbers(start + 1, end);
+// }
+
+// Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// В итоге получается вот такой массив:
+// 7 4 2 1
+// 9 5 3 2
+// 8 4 4 2
+
+// Console.WriteLine("Введите количество строк");
+// int linesVol = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите количество столбцов");
+// int columnsVol = Convert.ToInt32(Console.ReadLine());
+// int[,] numbers = new int[linesVol, columnsVol];
+// FillArrayRandomNumbers(numbers);
+// Console.WriteLine();
+// Console.WriteLine("Массив до изменения");
+// PrintArray(numbers);
+
+// for (int i = 0; i < numbers.GetLength(0); i++)
+// {
+//     for (int j = 0; j < numbers.GetLength(1) - 1; j++)
+//     {
+//         for (int z = 0; z < numbers.GetLength(1) - 1; z++)
+//         {
+//             if (numbers[i, z] < numbers[i, z + 1])
+//             {
+//                 int temp = 0;
+//                 temp = numbers[i, z];
+//                 numbers[i, z] = numbers[i, z + 1];
+//                 numbers[i, z + 1] = temp;
+//             }
+//         }
+//     }
+// }
+// Console.WriteLine();
+// Console.WriteLine("Массив с упорядоченными значениями");
+// PrintArray(numbers);
+
+// void FillArrayRandomNumbers(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i, j] = new Random().Next(0, 10);
+//         }
+//     }
+// }
+
+// void PrintArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         Console.Write("[ ");
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i, j] + " ");
+//         }
+//         Console.Write("]");
+//         Console.WriteLine("");
+//     }
+// }
+
+// Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
+// Например, даны 2 матрицы:
+// 2 4 | 3 4
+// 3 2 | 3 3
+// Результирующая матрица будет:
+// 18 20
+// 15 18
+
+// int InputInt(string output)
+// {
+//     Console.Write(output);
+//     return int.Parse(Console.ReadLine());
+// }
+
+// void FillArrayRandomNumbers(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i, j] = new Random().Next(1, 5);
+//         }
+//     }
+// }
+
+// void PrintArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         Console.Write("[ ");
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i, j] + " ");
+//         }
+//         Console.Write("]");
+//         Console.WriteLine("");
+//     }
+// }
+
+// int size = InputInt("размерность матриц: ");
+// int[,] matrixA = new int[size, size];
+// int[,] matrixB = new int[size, size];
+// FillArrayRandomNumbers(matrixA);
+// FillArrayRandomNumbers(matrixB);
+// int[,] matrixC = new int[size, size];
+
+// for (int i = 0; i < size; i++)
+// {
+//     for (int j = 0; j < size; j++)
+//     {
+//         for (int k = 0; k < size; k++)
+//         {
+//             matrixC[i, j] = matrixC[i, j] + (matrixA[i, k] * matrixB[k, j]);
+//         }
+//     }
+// }
+// Console.WriteLine("Матрица - А");
+// PrintArray(matrixA);
+// Console.WriteLine();
+// Console.WriteLine("Матрица - В");
+// PrintArray(matrixB);
+// Console.WriteLine();
+// Console.WriteLine("Произведение матриц А*В");
+// PrintArray(matrixC);
+
+// Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
+// Например, на выходе получается вот такой массив:
+// 01 02 03 04
+// 12 13 14 05
+// 11 16 15 06
+// 10 09 08 07
+
+// Console.WriteLine("Введите размер массива");
+// int size = Convert.ToInt32(Console.ReadLine());
+
+// int[,] nums = new int[size, size];
+
+// int num = 1;
+// int i = 0;
+// int j = 0;
+
+// while (num <= size * size)
+// {
+//     nums[i, j] = num;
+//     if (i <= j + 1 && i + j < size - 1)
+//         ++j;
+//     else if (i < j && i + j >= size - 1)
+//         ++i;
+//     else if (i >= j && i + j > size - 1)
+//         --j;
+//     else
+//         --i;
+//     ++num;
+// }
+
+// PrintArray(nums);
+
+// void PrintArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         Console.Write("[ ");
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i, j] + " ");
+//         }
+//         Console.Write("]");
+//         Console.WriteLine("");
+//     }
+// }
