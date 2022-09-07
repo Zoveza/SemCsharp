@@ -472,23 +472,6 @@
 //     }
 // }
 
-// Задача 65: Задайте значения M и N. Напишите программу, которая выведет все натуральные числа в промежутке от M до N.
-// M = 1; N = 5 -> "1, 2, 3, 4, 5"
-// M = 4; N = 8 -> "4, 5, 6, 7, 8"
-
-// Console.Write("Введите M: ");
-// int m = int.Parse(Console.ReadLine());
-// Console.Write("Введите N: ");
-// int n = int.Parse(Console.ReadLine());
-// PrintNumbers(m,n);
-
-// void PrintNumbers(int start, int end)
-// {
-//     Console.Write($"{start} ");
-//     if (start == end) return;
-//     PrintNumbers(start + 1, end);
-// }
-
 // Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
 // Например, задан массив:
 // 1 4 7 2
@@ -664,3 +647,38 @@
 //         Console.WriteLine("");
 //     }
 // }
+
+// Задача 65: Задайте значения M и N. Напишите программу, которая выведет все натуральные числа в промежутке от M до N.
+// M = 1; N = 5 -> "1, 2, 3, 4, 5"
+// M = 4; N = 8 -> "4, 5, 6, 7, 8"
+
+// Console.Write("Введите M: ");
+// int m = int.Parse(Console.ReadLine());
+// Console.Write("Введите N: ");
+// int n = int.Parse(Console.ReadLine());
+// PrintNumbers(m,n);
+
+// void PrintNumbers(int start, int end)
+// {
+//     Console.Write($"{start} ");
+//     if (start == end) return;
+//     PrintNumbers(start + 1, end);
+// }
+
+// Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+// Console.Write("Введите M: ");
+// int m = int.Parse(Console.ReadLine());
+// Console.Write("Введите N: ");
+// int n = int.Parse(Console.ReadLine());
+// void NumberSum (int m, int n, int sum)
+// {
+//     if (m > n) 
+//     {
+//         Console.WriteLine($"Сумма натуральных элементов в промежутке от M до N = {sum}"); 
+//         return;
+//     }
+//     sum = sum + (m++);
+//     NumberSum(m, n, sum);
+// }
+
+// NumberSum(m, n, 0);
